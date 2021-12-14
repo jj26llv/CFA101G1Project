@@ -1,0 +1,26 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+	<footer>
+		<div class="foot">
+			<div class="container">
+				<div class="row" style="height: 200px;">
+					<div class="col-3">
+						<form method="post" action="<%=request.getContextPath()%>/transRec/transrec.do">
+							<c:if test="${not empty memVO}">
+								<input type="hidden" name="action" value ="logout">
+								<input type="submit" value="logout">	
+							</c:if>
+							<c:if test="${empty memVO}">
+								<input type="hidden" name="action" value ="memLogin">
+								<input type="hidden" name="acccount" value ="abc101">
+								<input type="hidden" name="password" value ="123456">
+								<input type="submit" value="login">	
+							</c:if>
+							<input type="hidden" name="forwardPage" value ="<%=request.getServletPath()%>">
+						</form>
+					</div>
+					<div class="col-9">${not empty memVO.memName? memVO.memName:"請登入" }</div>
+				</div>
+			</div>
+		</div>
+	</footer>

@@ -1,0 +1,57 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">CountMEIn</a>
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item"><a class="nav-link" href="#">主要商城管理</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">二手商城管理</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">拍賣商城管理</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">競標商城管理</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">討論交流區管理</a>
+						</li>
+
+					</ul>
+					<form class="d-flex">
+						<button class="btn btn-outline-success btn-sm me-md-4"
+							type="submit">權限設定</button>
+						<button class="btn btn-outline-success btn-sm" type="submit">管理員登入</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+		<div class="MallTop">
+			<div style="margin-top: 56px">
+				<div class="container">
+					<div class="row">
+						<div class="col" style="height: 15px;"></div>
+					</div>
+					<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+					<div class="row">
+						<div class="col-3">
+							<a href=""> <img src="<%=request.getContextPath()%>/back_end/auctAct/images/logo.jpg" alt="logo"
+								style="height: 90px; margin-bottom: 15px;";>
+							</a>
+						</div>
+						<div class="col-6">
+							<div class="row ">
+								<div class="input-group mb-4 justify-content-center"></div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
